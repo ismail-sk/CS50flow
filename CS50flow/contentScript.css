@@ -1,0 +1,83 @@
+/* Main Styles of FlowBox */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all 850ms ease-in-out;
+}
+
+.container-flow {
+	margin: 0 auto;
+	max-width: 700px;
+	max-height: 520px;
+	background-color: white;  
+  	margin-block-end: 25px;
+	
+}
+
+.gallery {
+	max-height: 500px;
+	position: relative;
+	/*white-space: nowrap;*/
+	display: flex;
+	
+}
+
+.gallery-wrapper {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+}
+
+.wrapper-item {
+	height: 500px;
+	width: 700px;
+	background-color: #ddd;
+  	text-align: center;
+	overflow: hidden;
+	/* scroll-behavior: smooth; */
+	cursor: pointer;  
+}
+
+.wrapper-item.completed {
+	background-color: rgb(57, 172, 57);
+    background-image:url('https://thumbs.dreamstime.com/z/completed-text-green-grungy-vintage-stamp-rectangle-218760317.jpg');
+    background-repeat:no-repeat;
+    background-size:100%;
+	background-position-y: 125%;
+
+}
+.wrapper-item.thisSelected {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* link box */
+a.boxx {
+	border: 3px solid rgb(57, 172, 57);
+	border-radius: 9px;
+	padding: 3px;
+	background-color: rgb(166, 196, 117);
+}
+
+/*  Control Buttons */
+.controls {
+	font-size: 14px;
+	border-top: none;
+}
+.move-btn {
+	display: inline-block;
+  height: 24px;
+	width: 50%;
+	border: 2px solid black;
+  color: #eee;
+	background-color: gray;
+	padding: 0.2em 1.5em;
+}
+.move-btn:first-child {border-right: none;}
+.move-btn.left  { cursor: w-resize; }
+.move-btn.right { cursor: e-resize; }
+ 
