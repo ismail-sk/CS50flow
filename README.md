@@ -18,6 +18,7 @@ And helps for development!
 * click on Load unpacked
 * Select the extension file in folder where you downloaded
 
+
 2. installing example cs50.me web pages. (optional)
 * Open your downloaded files. Enter the "offlineExamplePages" > "editedForTests" or "orginal" > (open HTM files in this dirs via a web browser)
 * Copy adress bar ([look this picture for that](https://img.webnots.com/2013/12/Chrome-Address-Bar.png))
