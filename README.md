@@ -10,6 +10,7 @@ And helps for development!
 
 ## installation
 1. installing extension;
+
 (you can wach [this video](https://www.youtube.com/watch?v=hIRX1dpfqHc))
 
 * First goto chrome://extensions in address bar
@@ -37,4 +38,3 @@ Functionality development:
 - [ ] Add A button for jumping to the need be first complete
 - [ ] Redirect directly links to non-compete labs and pset in a week window.
 - [ ] functions that storing student's notes or cloud links within the weeks or like things
-- [ ] alternation to collaborative study platforms
