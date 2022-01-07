@@ -4,8 +4,6 @@ This repository and project builded for CS50x final project.
 A chrome extension for to follow of study CS50
 
 easy-flow and all-on-one-place targeted a study.
-i need little time for complete this readme!
-And helps for development!
 
 
 ## installation
