@@ -3,7 +3,7 @@
     "name": "CS50flow",
     "version": "0.1.0",
     "author": "ismail-sk",
-    "description": "This extension for CS50 flow diagrams",
+    "description": "This extension builded for CS50 final project",
 
     "icons": { 
         "16": "/images/online-learning(7).png",
@@ -20,7 +20,7 @@
     },
     "content_scripts": [
         {
-        "matches": ["https://cs50.me/cs50x", "file:///C:/Users/SK/Desktop/code/Final/CS50.me%20CS50x%202021.htm"], 
+        "matches": ["https://cs50.me/cs50x", "file:///C:/offlineExamplePages/editedForTests/CS50.me_%20CS50x%202022.html", "file:///C:/offlineExamplePages/orginal/CS50.me_%20CS50x%202022.html"], 
         "js": ["contentScript.js"],
         "css": ["contentScript.css"],
         "run_at": "document_end"

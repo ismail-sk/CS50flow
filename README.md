@@ -5,9 +5,10 @@ A chrome extension for to follow of study CS50
 
 easy-flow and all-on-one-place targeted a study.
 
+You can wach [preview video here](https://youtu.be/x1W1lQkBna8)
 
 ## installation
-1. installing extension;
+### 1. installing extension;
 
 (you can wach [this video](https://www.youtube.com/watch?v=hIRX1dpfqHc))
 
@@ -17,8 +18,15 @@ easy-flow and all-on-one-place targeted a study.
 * Select the extension file in folder where you downloaded
 
 
-2. installing example cs50.me web pages. (optional)
-* Open your downloaded files. Enter the "offlineExamplePages" > "editedForTests" or "orginal" > (open HTM files in this dirs via a web browser)
+### 2. installing example cs50.me web pages. (optional)
+You can use offline example web pages if you are not have EDx and GitHUB account.
+
+#### Short way (for windows users)
+if you use this app in a windows computer;
+Now you can directly use this app without changing any file(like described below). Only you need the do copy  "offlineExamplePages" folder to C:/ dir. after that; open HTML files via Chrome browser.
+
+#### Long way
+* Open your downloaded files in a folder. Enter the "offlineExamplePages" > "editedForTests" or "orginal" > (open HTM files in this dirs via a web browser)
 * Copy adress bar ([look this picture for that](https://img.webnots.com/2013/12/Chrome-Address-Bar.png))
 * open "manifest.json" in downloaded files via a text editor.
 * find "matches" under "content_scripts".
@@ -34,6 +42,6 @@ switch pages with arrows and clicking linkes
 I thought to develop this application like this ideas:
 Functionality development:
 - [x] Basic level program (only weeks can being redirect in weeks window)
+- [x] Redirect directly links to non-compete labs and pset in a week window.
 - [ ] Add A button for jumping to the need be first complete
-- [ ] Redirect directly links to non-compete labs and pset in a week window.
-- [ ] functions that storing student's notes or cloud links within the weeks or like things
+- [ ] (Maybe) functions that storing student's notes or cloud links within the weeks or like things
