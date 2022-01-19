@@ -1,0 +1,37 @@
+body {
+    padding: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.progress-bar {
+    background-color: red;
+}
+
+ul.stepper li.active a .circle, ul.stepper li.completed a .circle {
+    background-color: green !important;
+}
+
+.stepper-vertical li .step-content {
+    padding-top: 0px;
+    margin-left: 0px;
+    padding-left: 4.07rem;
+}
+
+.problem-progress {
+    margin: 5px;
+}
+
+.progress-small {
+    height: 5px;
+}
+
+.progress-complete {
+    background-color: green;
+}
+
+.nohover {
+    cursor: default;
+}
