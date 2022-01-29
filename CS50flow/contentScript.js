@@ -26,48 +26,58 @@ let perCount = 0, lii,label,weekItems, wItem;
 
 for (perCount=1; perCount < itemCount+1; perCount++) {
 	
-	lii = SelectorPre + perCount; //container?
+	lii = SelectorPre + perCount; //container
 	label = document.querySelector(lii + ") > a > span.label").textContent;
 
 	// HTML tags holder start here
 	message+= "<div class='wrapper-item";
 
+	// checking elements contain "active" -- document.querySelector("body > div.container > div.row.mt-1 > div > ul > li:nth-child(1)").className --
 	if (document.querySelector(lii + ")").className == "active") {
+		// if is contain; add "complated" class
 		message +=" completed'><h1>" + label + "</h1>";
 	}
 	else {
+		// if not: add week name for header
 		message +="'><h1>" + label + "</h1>";
 		
+		// Build first button for main dir/path of week 
 		let buttonPack = '<p class="linkboxx"><a href="' + links[perCount-1] + '" target="_blank">Visit: '+ label +'</a></p>';
+		
+		// find explain of week's contained text
 		let paragraph = document.querySelector(lii + ") > div > p"); // example: document.querySelector("body > div.container > div.row.mt-1 > div > ul > li:nth-child(2) > div > p")
 
+		// check avabilty of text (in cs50x; only final week is not have explain text/paragraph)
 		if(paragraph) {
 			message += paragraph.innerHTML + "<br>" + buttonPack;
 
+			// read labels of homeworks/psat/labs.
 			weekItems = lii + ") > div > div.problem-progress";
 
 			for (let weekInCounter =0; weekInCounter < document.querySelectorAll(weekItems).length; weekInCounter++) {
 
+				// cleaning the label texts
 				wItem = document.querySelectorAll(weekItems)[weekInCounter].firstChild.nodeValue.split(' - ')[0].replace("Sentimental / ","").trim();
 				//for test: console.log(wItem, typeof(wItem), wItem.length, typeof(weekItems));
 
 				let aaa = String(lii+") > div > div:nth-child("+ (weekInCounter+2) +") > div > div");
 
+				// choise color of lab/pset buttons
 				if (document.querySelector(aaa).classList.contains("progress-complete")) {
 					message += "<p class='boxx comp";
 				}
 				else {
 					message += "<p class='boxx";
 				}
+				
 				let litem = "";
 				if(wItem.includes("Lab ")) {
-					//for test: console.log("yess",wItem);
 					let labLink = links[perCount-1].replace("weeks","labs");
 					litem = '<a href="' + labLink + '" target="_blank">'+ wItem +'</a>';
 					
 				}
 				else{
-					psetLink = links[perCount-1].replace("weeks","psets");
+					let psetLink = links[perCount-1].replace("weeks","psets");
 					litem = '<a href="' + psetLink + '" target="_blank">'+ wItem +'</a>';
 				}
 				let isIncBef = wItem + " or";
