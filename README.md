@@ -31,7 +31,7 @@ Now you can directly use this app without changing any file(like described below
 * open "manifest.json" in downloaded files via a text editor.
 * find "matches" under "content_scripts".
 * pastle your copied link in between (") after (,)  ["https://cs50.me/cs50x", "file:///C:/Users/ ... /CS50.me%20CS50x%202021.htm"]
-* you can add another dir befeore ( ] ) adding first ( , ) example from my:
+* you can add another dir befeore ( ] ) adding ( , ) example from my:
 "matches": ["https://cs50.me/cs50x", "file:///C:/Users/SK/Desktop/code/Final/offlineExamplePages/editedForTests/CS50.me%20CS50x%202021.htm", "file:///C:/Users/SK/Desktop/code/Final/offlineExamplePages/orginal/CS50.me%20CS50x%202021.htm"], 
 
 ## Usage
